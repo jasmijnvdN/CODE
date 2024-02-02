@@ -115,7 +115,7 @@ int main(void)
     int kwak = 0;
     int pakop = 0;
     int home_y = 0;
-    int jeff= 0;
+    int start= 0;
     int teller_y= 0;
     int go_y= 0;
     int go_down = 1;
@@ -195,11 +195,11 @@ int main(void)
                 _delay_ms(20);
                 knop2_is_al_ingedrukt = 1;
                 //PORTB &= ~(1<<7);//z-AS AAN tot schakelaar
-                jeff= 1;
+                start= 1;
             }
         }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////z as oppakken blokje
-        if(jeff ==1)
+        if(start ==1)
         {
 
 
@@ -355,7 +355,7 @@ int main(void)
                     kwak = 0;
                      pakop = 0;
                      home_y = 0;
-                     jeff= 0;
+                     start= 0;
                      teller_y= 0;
                      go_y= 0;
                      go_down = 1;
